@@ -12,6 +12,6 @@ Certainly we would duplicate the button and change the text as we wanted which w
 ## what is component ?
 A component is piece of reusable UI. it could be a button,search bar, link, a section even a whole webpage (maybe).
 
-components can optionally receive argument which call properties (shortly props) used to dynamically change info through them while being used in different places, and also contain state for holding infos about components.
+components can optionally receive argument which call properties (shortly props) used to dynamically change info through them while being used in different places, and also contain state for holding infos about components, events,....
 
 ... ...
