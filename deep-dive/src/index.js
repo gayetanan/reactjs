@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Button from './1-component/class-base';
+import { RenderedElement } from './1-component/Jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
   <React.StrictMode>
-    <Button/>
+    <RenderedElement/>
   </React.StrictMode>
 );
 
