@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createElement } from "react";
 
 // imparativelly create element
 // const props = {className:"test-class"}
@@ -13,7 +13,5 @@ const JsxNestedElement =(
 )
 
 // render the element
-function RenderedElement(){
-  return  JsxNestedElement;
-}
-export  {RenderedElement};
+
+export  {JsxNestedElement};
