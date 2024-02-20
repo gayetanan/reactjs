@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import navbarElement from './1-component/2-challenge';
+import { JsxMulElement } from './1-component/1-element';
+// import navbarElement from './1-component/2-challenge';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  navbarElement
+  JsxMulElement
   // <React.StrictMode>
-  //   <RenderedElement/>
   // </React.StrictMode>
 );
 

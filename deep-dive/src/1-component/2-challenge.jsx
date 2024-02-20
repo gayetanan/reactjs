@@ -3,17 +3,19 @@ import { createElement } from "react";
 //ul and 3 li using both create element and JSX;
 
 // const navbarElement = (createElement("nav",null,
-//   createElement("ul",null,
-//   [createElement("li",{},"list-1"),createElement("li",{},"list-1"),createElement("li",{},"list-1")]
-//   )
+//  [createElement("h1",{},"ok."),
+//  createElement("ul",null,
+//   [createElement("li",{},"Home"),createElement("li",{},"About"),createElement("li",{},"Menu")]
+//   )]
 // ))
 
 const navbarElement = (
   <nav>
+    <h1>OK.</h1>
     <ul>
-      <li>list-1</li>
-      <li>list-2</li>
-      <li>list-3</li>
+      <li>Home</li>
+      <li>About</li>
+      <li>Menu</li>
     </ul>
   </nav>
 );
