@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { JsxMulElement } from './1-component/1-element';
-// import navbarElement from './1-component/2-challenge';
+import FunPage from './1-component/4-challenge';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  JsxMulElement
-  // <React.StrictMode>
-  // </React.StrictMode>
+  <React.StrictMode>
+    <FunPage/>
+  </React.StrictMode>
 );
 

@@ -7,11 +7,11 @@ import React, { createElement } from "react";
 // JSX
 // const jsx = <h1>Hello, from jsx</h1>;
 
-const JsxNestedElement = (
+const JsxMulElement = (
   <React.Fragment>
     <h1>hello nested element</h1>
     <h2>ok....</h2>
   </React.Fragment>
 )
 
-export  {JsxNestedElement};
+export  {JsxMulElement};
