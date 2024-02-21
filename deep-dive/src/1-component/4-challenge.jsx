@@ -1,11 +1,17 @@
 // create a page
 import img from "./logo192.png";
+import "./footer.css"
+import styles from "./list-style.module.css"
+/*
+styling
+*/
 
+// inline styling
 function Header(){
-  return <header>
+  return <header style={{display:"flex",justifyContent:"space-between"}}>
       <img src={img} alt="react logo" width="40px" />
       <nav>
-        <ul>
+        <ul style={{display:"flex",listStyle:"none",gap:"1rem",}}>
           <li>Home</li>
           <li>About</li>
         </ul>
@@ -13,9 +19,10 @@ function Header(){
   </header>
 }
 // turn list into component
+// css module
 function MyListComponent() {
   return (
-    <ul>
+    <ul className={styles.listStyle}>
       <li>element 1</li>
       <li>element 2</li>
       <li>element 3</li>
@@ -23,12 +30,15 @@ function MyListComponent() {
     </ul>
   );
 }
+
 function MainContent(){
   return <>
-    <h1>Fun fact about react!</h1>
+    <h1 className="heading-1">Fun fact about react!</h1>
       <MyListComponent />
   </>
 }
+// component style
+// by  creating a css file only for this component
 function Footer(){
   return <footer>
     <small>Hello footer</small>
