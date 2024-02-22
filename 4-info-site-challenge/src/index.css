@@ -18,17 +18,17 @@ nav h4{
   font-size: 1rem;
   color:#DEEBF8;
 }
-
-nav .content {
+nav .content,.logo{
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+nav .content {
+  justify-content: space-between;
+
 }
 
 .logo {
   width: 30px;
-  display: flex;
-  align-items: center;
   gap: .5rem;
 }
 
