@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,63 +11,79 @@
   font-variation-settings:
     "slnt" 0;
 }
-body{
+
+body {
   background-color: #E2DEE9;
-  padding:4rem 0;
+  padding: 4rem 0;
 }
-.container{
+
+.container {
   width: calc(min(100% - 2rem, 768px));
   margin: 0 auto;
 }
-.card{
+
+.card {
   background-color: white;
   border-radius: 12px;
   padding: 1rem;
   width: 100%;
-  max-width: 320px;
+  max-width: 360px;
   margin: 0 auto;
 }
-.image-fit-ctn{
+
+.card:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.image-fit-ctn {
   border-radius: 8px;
   overflow: hidden;
 }
-.image-fit-ctn img{
-  max-width: 100%;
+
+.image-fit-ctn img {
+  /* max-width: 100%; */
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.cover{
+.cover {
   height: 200px;
 }
-.avatar{
+
+.avatar {
   width: 48px;
   height: 48px;
 }
-.avatar.image-fit-ctn{
+
+.avatar.image-fit-ctn {
   border-radius: 100%;
 }
-.bottom-card{
+
+.bottom-card {
   margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.user-detail{
+
+.user-detail {
   display: flex;
   align-items: center;
-  gap:12px;
+  gap: 12px;
 }
-.user-detail .username{
-  color:#A8A6AC;
+
+.user-detail .username {
+  color: #A8A6AC;
   font-size: 14px;
 }
-.user-detail h4{
+
+.user-detail h4 {
   color: #2A282F;
   margin-bottom: 1px;
 }
 
-button{
+button {
   background-color: transparent;
   border: none;
   outline: none;
@@ -76,8 +93,62 @@ button{
   display: inline-flex;
   border-radius: 100%;
 }
+
 button svg,
-button i{
+button i {
   pointer-events: none;
 
+}
+
+.post-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.post-header>div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.post-header>div .time,
+.post-header>div span {
+  color: #A8A6AC;
+}
+
+.time {
+  font-size: 12px;
+}
+
+.name {
+  font-size: 14px;
+  color: #2A282F;
+}
+
+.post-body {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #2A282F;
+}
+
+.post-footer {
+  margin-top: 8px;
+}
+
+.post-footer button {
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 0;
+  color: #A8A6AC;
+}
+
+.post-footer button:not(:last-of-type) {
+  margin-right: 12px;
+}
+
+.post-footer button svg {
+  font-size: 17px;
 }
