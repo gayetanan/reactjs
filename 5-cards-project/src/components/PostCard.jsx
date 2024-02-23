@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import Card from "./Card";
 import PostCover from "./Cover";
 import Avatar from "./Avatar";
@@ -5,17 +6,17 @@ import { HiDotsHorizontal } from "react-icons/hi";
 
 
 
-function PostCard({cover,avatar}){
+function PostCard({post}){
     return(
         <Card>
             <div className="content">
-               <PostCover img={cover} />
+               <PostCover img={post.cover} />
                <div className="bottom-card">
                   <div className="user-detail">
-                    <Avatar img={avatar}/>
+                    <Avatar img={post.user.avatar}/>
                     <div>
-                        <h4>Gaetan Emmanuel</h4>
-                        <span className="username">@gayetan.an</span>
+                        <h4>{post.user.name}</h4>
+                        <span className="username">@{post.user.username}</span>
                     </div>
                   </div>
                   <button>
@@ -25,6 +26,11 @@ function PostCard({cover,avatar}){
             </div>
         </Card>
     )
+}
+
+PostCard.propType ={
+    post:PropTypes.object.isRequired
+
 }
 
 export default PostCard
