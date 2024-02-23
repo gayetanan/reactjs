@@ -1,0 +1,3 @@
+# SOLO PROJECT
+
+learning about props,Proptypes,.....
