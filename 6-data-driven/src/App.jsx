@@ -1,11 +1,13 @@
-import AccessJSData from "./Access-js-data";
-import MyList from "./List";
+// import AccessJSData from "./Access-js-data";
+// import MyList from "./List";
+import Posts from "./Posts";
 
 function App() {
   return (
     <>
-      <MyList />
+      {/* <MyList /> */}
       {/* <AccessJSData /> */}
+      <Posts />
     </>
   );
 }
